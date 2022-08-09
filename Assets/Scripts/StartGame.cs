@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    public void playGame()
+    private void OnTriggerEnter(Collider other)
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+   
 }
