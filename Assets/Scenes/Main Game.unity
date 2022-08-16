@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 42236166}
   - component: {fileID: 42236165}
   - component: {fileID: 42236164}
-  - component: {fileID: 42236163}
+  - component: {fileID: 42236168}
   m_Layer: 0
   m_Name: FoodManager (2)
   m_TagString: Untagged
@@ -445,24 +445,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &42236163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42236162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 279cc26872db51d41b8bce39fdc6edfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointText: {fileID: 2048733703}
-  foodEat: {fileID: 1323642973}
-  wrongFood: {fileID: 1359718845}
-  yuckyFood: {fileID: 1020047110}
-  orders:
-  - {fileID: 798090921}
 --- !u!65 &42236164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -541,6 +523,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &42236168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42236162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557a55e3dcad08745ab07ae8b4a6822d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointText: {fileID: 2048733703}
+  foodEat: {fileID: 1323642973}
+  wrongFood: {fileID: 1359718845}
+  yuckyFood: {fileID: 1020047110}
+  drink: {fileID: 798090921}
 --- !u!1 &45625437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,7 +2449,7 @@ GameObject:
   - component: {fileID: 270132837}
   - component: {fileID: 270132836}
   - component: {fileID: 270132835}
-  - component: {fileID: 270132834}
+  - component: {fileID: 270132839}
   m_Layer: 0
   m_Name: FoodManager (1)
   m_TagString: Untagged
@@ -2458,24 +2457,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &270132834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270132833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 279cc26872db51d41b8bce39fdc6edfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointText: {fileID: 2048733703}
-  foodEat: {fileID: 1323642973}
-  wrongFood: {fileID: 1359718845}
-  yuckyFood: {fileID: 1020047110}
-  orders:
-  - {fileID: 1900443931}
 --- !u!65 &270132835
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2554,6 +2535,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &270132839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270132833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037f73fef4178f84cb39481c4951bb9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointText: {fileID: 2048733703}
+  foodEat: {fileID: 1323642973}
+  wrongFood: {fileID: 1359718845}
+  yuckyFood: {fileID: 1020047110}
+  chip: {fileID: 1900443931}
 --- !u!1001 &284003567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10381,7 +10379,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051552529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0000014180216}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17384,15 +17382,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1769976084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 279cc26872db51d41b8bce39fdc6edfe, type: 3}
+  m_Script: {fileID: 11500000, guid: 86b34deca3274704380a35c21d05ae9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pointText: {fileID: 2048733703}
   foodEat: {fileID: 1323642973}
   wrongFood: {fileID: 1359718845}
   yuckyFood: {fileID: 1020047110}
-  orders:
-  - {fileID: 192085821}
+  bgr: {fileID: 192085821}
 --- !u!1001 &1781264799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17967,8 +17964,6 @@ GameObject:
   - component: {fileID: 1866061065}
   - component: {fileID: 1866061064}
   - component: {fileID: 1866061063}
-  - component: {fileID: 1866061069}
-  - component: {fileID: 1866061070}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -17983,7 +17978,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866061062}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3792c3adb82b93a48bae08e303c65702, type: 3}
   m_Name: 
@@ -18018,11 +18013,11 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866061062}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 476539568bab8444c88cdd6e2ccf85c0, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.5, y: 1, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1866061066
 MeshRenderer:
@@ -18090,40 +18085,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1866061069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866061062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11d51e52ae14dff40af9e5cfc721fa32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.5
-  jumpSpeed: 2
-  gravity: 20
-  cameraTransform: {fileID: 484511359}
---- !u!143 &1866061070
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866061062}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 1
-  m_Radius: 0.50000006
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1868532687
 PrefabInstance:
   m_ObjectHideFlags: 0

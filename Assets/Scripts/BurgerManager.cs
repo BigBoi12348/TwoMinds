@@ -12,9 +12,10 @@ public class BurgerManager : MonoBehaviour
     public AudioSource wrongFood;
     public AudioSource yuckyFood;
 
-    public List<GameObject> orders; 
+    //public List<GameObject> orders; 
 
     private int score = 0; 
+
 
     
 
@@ -32,16 +33,40 @@ public class BurgerManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (orders.Contains(other.gameObject))
+        if (other.name.Equals("Cheese_02"))
         {
-            pointText.text = "" + ++score;
+            score += 1;
+            pointText.text = score.ToString();
             foodEat.Play();
-            Destroy(other.gameObject);
+            Destroy(gameObject);
         }
+        if (other.name.Equals("Cheese_02"))
+        {
+            score += 1;
+            pointText.text = score.ToString();
+            foodEat.Play();
+            Destroy(gameObject);
+        }
+        if (other.name.Equals("Cheese_02"))
+        {
+            score += 1;
+            pointText.text = score.ToString();
+            foodEat.Play();
+            Destroy(gameObject);
+        }
+        if (other.name.Equals("Cheese_02"))
+        {
+            score += 1;
+            pointText.text = score.ToString();
+            foodEat.Play();
+            Destroy(gameObject);
+        }
+
         else
         {
             wrongFood.Play();
-            pointText.text = "" + --score;
+            score -= 1;
+            pointText.text = score.ToString();
         }      
     }
 }
