@@ -13,7 +13,7 @@ public class DaySwitch : MonoBehaviour
 
     IEnumerator NextScene()
     {
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(13f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
