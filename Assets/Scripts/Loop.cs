@@ -28,7 +28,7 @@ public class Loop : MonoBehaviour
             else
             {
                 Debug.Log("Time is UP!");
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("EndCutScene");
                 TimeLeft = 0;
                 TimerOn = false;
             }

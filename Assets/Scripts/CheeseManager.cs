@@ -47,12 +47,6 @@ public class CheeseManager : MonoBehaviour
             Point.point -= 1;
             pointText.text = Point.point.ToString();
         }
-        if (other.name.Equals("Cheese_02"))
-        {
-            wrongFood.Play();
-            Point.point -= 1;
-            pointText.text = Point.point.ToString();
-        }
         if (other.name.Equals("Pizza"))
         {
             wrongFood.Play();
