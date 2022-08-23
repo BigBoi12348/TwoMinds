@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondLevel.unity
     guid: 192c9ef1da3aa9a4d84e70ca408ebdfc
+  - enabled: 1
+    path: Assets/Scenes/EndCutScene.unity
+    guid: 0ebfabd7f9a7aac4388e2dd80b50a85f
+  - enabled: 1
+    path: Assets/Scenes/RatMenu.unity
+    guid: 6fc0f7d2a106eaa459a7a55675d5ffb0
   m_configObjects: {}
